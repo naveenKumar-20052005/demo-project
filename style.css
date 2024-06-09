@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    /* overflow-x: hidden;overflow-y: visible; */
+    height: fit-content;scroll-behavior: smooth;
+}
+
+body{
+    font-family: serif;
+    font-size: 16px;
+    
+}
+.logo{
+    font-size: 12px;
+    
+    padding: 6px;
+    margin-left: 10px;
+}
+.con{
+    display: flex;
+    flex-direction: row;
+    position: sticky !important;
+}
+.nav{
+    text-align: center  ;
+    align-items: center;
+    justify-content: center;
+ 
+}
+ul{
+    position: relative;
+    top: 8px;
+}
+
+.nav li{
+    margin-left: 13px;
+    border-bottom: solid 1px;
+    border: none;
+    
+    font-weight: bolder;
+}
+li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    color: rgb(49, 49, 255);
+    
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline;
+    font-family: monospace;
+}
+li svg{
+   width: 20px;
+   height: 15px;
+   position: absolute;
+   right: 30px;
+   top: 14px;
+   display: none;
+   
+}
+li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.img{
+
+    background-image: url(./images/architect.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+} 
+.BR{
+     display: flex;
+     position: absolute;
+     top: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    /* margin-left: 10px; */
+    font-family: monospace;
+
+}
+.BR b{
+    background-color: gray;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+     
+}
+
+
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.gallery img{
+    flex-basis: 20%;
+    flex-grow: 1;
+    width: 200px;
+    margin: 10px;
+}
+.gallery h2{
+    text-align: center;
+    margin: 7px 0px; 
+     font-family: monospace;
+    font-weight: bold;
+}
+.about h2{
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+       margin: 7px 0px; 
+}
+.about p{
+    padding: 0 50px ;
+    font-family: serif;
+    font-size: 18px;
+
+}
+.content h2{
+      text-align: center;
+    margin: 7px 0px; 
+     font-family: monospace;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+
+}
+.content img{
+    width: 280px;
+
+}
+.content div{
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 6px snow;
+    flex-basis: 23%;
+    margin: 10px;
+    padding: 15px;
+    flex-grow: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0, 19);
+
+}
+.content button{
+    padding: 5px;
+    font-size: .90rem;
+    margin: 7px 0px;
+    border: none;
+    
+}
+.content button:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0, 19);
+    cursor: pointer;
+    
+}
+.contact{
+    padding: 10px;
+}
+form input{
+    margin: 10px 0;
+    padding: 5px;
+    width: 400px;
+    display: block;
+
+}
+form button{
+    width: 250px;
+    padding: 2px;
+    font-size: 16px;
+
+}
+.map img{
+    width: 280px;
+    height: auto;
+}
+.map{
+    margin: 20px 0;
+    padding: 10px;
+}
+.fooder{
+    background-color: black;
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+
+@media all and (max-width:640px){
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    li{
+    
+        display: block;
+    }
+    .con{
+        display: flex;
+        flex-direction: column;
+    }
+    li:hover{
+        border: none;
+    }
+    ul{
+        text-align: center;
+        display: none;
+    }
+    li svg{
+        display: block;
+    }
+    .show{
+        display: block;
+    }
+    .img{
+ 
+        background-image: url(./images/architect.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+  
+}
+.BR{
+    position: relative;
+    top: 230px;
+
+}
+}
